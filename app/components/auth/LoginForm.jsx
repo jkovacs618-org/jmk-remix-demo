@@ -1,7 +1,8 @@
 import { Link, Form, useNavigation, useActionData } from '@remix-run/react';
 import { FaInfoCircle } from 'react-icons/fa';
+import ErrorBox from '../util/ErrorBox';
 
-function LoginForm() {
+function LoginForm({ error }) {
   const navigation = useNavigation();
   const validationErrors = useActionData();
   const isSubmitting = navigation.state !== 'idle';
@@ -30,6 +31,16 @@ function LoginForm() {
                         </ul>
                       </div>
                   </div>
+              )}
+
+              {error && (
+                <ErrorBox title="An error occurred">
+                  <p>
+                    {
+                      error || 'Something went wrong. Please try again later.'
+                    }
+                  </p>
+                </ErrorBox>
               )}
 
               <div>
