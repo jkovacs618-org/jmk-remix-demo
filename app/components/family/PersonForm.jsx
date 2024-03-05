@@ -18,13 +18,12 @@ export default function PersonForm() {
 
   const relationships = [
       'Self',
-      'Parent',
-      'Guardian',
       'Spouse',
       'Partner',
       'Child',
       'Step Child',
       'Sibling',
+      'Parent',
       'Aunt',
       'Uncle',
       'Niece',

@@ -22,7 +22,7 @@ nvm install v18.19.0
 
 ## App Setup:
 
-In the first terminal, run commands in the root path of the repo:
+From your terminal:
 
 ```bash
 cd path/to/repo/
@@ -56,14 +56,14 @@ This starts your app in development mode, rebuilding assets on file changes.
 
 ## Login with Demo User:
 
-> Visit: http://localhost:3000/
+> Visit: http://localhost:3000/ (or dynamic Port shown from npm run dev)
 
 The Demo User credentials will be filled in to the Login form by default:
 
 * Email: user@example.org<br/>
 * Password: password<br/>
 
-Explore the Family, Events, and Accounts sections, with search, add, edit, and delete actions for each.
+Explore the Family, Events, and Accounts sections, with add, edit, and delete actions for each.
 
 # Optional Actions:
 

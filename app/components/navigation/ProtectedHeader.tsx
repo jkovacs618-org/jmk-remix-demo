@@ -10,10 +10,6 @@ export default function ProtectedHeader() {
     <div>
       <nav className="flex items-center bg-slate-800 h-16 pl-6 pr-8 text-white">
           <div className="flex gap-4">
-              {/*<a>
-                  <FaBars className="text-3xl mt-1 mr-4 cursor-pointer text-white" />
-              </a>*/}
-
               <NavLink to="/dashboard" className="nav-link">
                   Dashboard
               </NavLink>
@@ -55,8 +51,6 @@ export default function ProtectedHeader() {
             </div>
           </div>
       </nav>
-
-      {/*<SideMenu />*/}
     </div>
   );
 }
